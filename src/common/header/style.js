@@ -24,6 +24,35 @@ export const Nav = styled.div`
     box-sizing:border-box;
     margin:0 auto;
 `
+export const SearchInput = styled.div`
+    position:relative
+    .iconfont {
+       position:absolute;
+       height:30px
+       padding:10px
+       box-sizing:border-box;
+       border-radius:30px;
+       background:#eee;
+       margin-left:-40px
+       margin-top:13px;
+       &.focus{
+          background:#777;
+          color:#fff
+       }
+    }
+    .slide-enter{
+        transition: all .2s ease-out;   
+    }
+ .slide-enter-active{
+      width:240px   
+    }
+ .slide-exit{
+    transition: all .2s ease-out;
+    }
+ .slide-exit-active{
+    width:160px    
+    }
+`
 export const NavItem = styled.div`
     line-height:56px;
     padding:0 15px;
@@ -35,6 +64,10 @@ export const NavItem = styled.div`
     &.right{
         float:right;
         color:#999;
+        .iconfont{
+            background:none;
+            font-size:20px;
+        }
     }
     &.active{
         color:#ea6f5a;
@@ -54,6 +87,9 @@ export const Button = styled.input.attrs({
     &::placeholder{
         font-size:14px;
          color:#999
+    }
+    &.focus{
+        width:240px;
     }
 `
 export const Addition = styled.div`
