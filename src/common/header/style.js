@@ -73,7 +73,15 @@ export const SearchInfoSwitch = styled.a`
     padding:10px;
     color:#777;
     font-size:13px;
-    
+    cursor: pointer;
+    .spin{
+        display:block;
+        float:left;
+        font-size:13px;
+        margin-right:2px;
+        transition:all .2s ease-in;
+        transform-origin: center center;
+    }
 `
 export const SearchInfoList = styled.ul`
     margin:10px 0 10px 10px;
