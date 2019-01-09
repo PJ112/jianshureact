@@ -6,8 +6,8 @@ class RightHeader extends Component {
         return(
           <Fragment>
               {
-                  this.props.list.map((item) => (
-                      <img className='RightHeaderImg' src={item.get('imgUrl')}/>
+                  this.props.list.map((item,index) => (
+                      <img className='RightHeaderImg' src={item.get('imgUrl')} key={index}/>
                   ))
               }
           </Fragment>

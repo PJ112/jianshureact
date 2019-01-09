@@ -12,8 +12,8 @@ class LeftContent extends Component{
         return (
             <Fragment>
                 {
-                    this.props.list.map((item) => (
-                       <Content>
+                    this.props.list.map((item,index) => (
+                       <Content key={index}>
                            <ContentLeft>
                                <ContentTitle>{item.get('title')}</ContentTitle>
                                <ContentContent>{item.get('desc')}</ContentContent>
